@@ -31,7 +31,7 @@ npm install
 node index.js
 ```
 
-樹里「上記のコマンドを実行すれば、`dist`ディレクトリにJSONデータが出力される」
+樹里「と実行すれば、`dist`ディレクトリにJSONデータが出力される」
 絵子「あら本当に簡単」
 樹里「じゃあ、アプリがどういう動きをするのか解説しよう」
 
@@ -59,5 +59,5 @@ const generator = require('./lib/generator');
 絵子「
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNzQwMTkzOV19
+eyJoaXN0b3J5IjpbNjE1NzU5NzQ4LC0yMzc0MDE5MzldfQ==
 -->
