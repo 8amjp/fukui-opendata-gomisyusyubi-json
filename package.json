@@ -1,0 +1,17 @@
+{
+  "name": "gcc-fukui-converter",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/8amjp/gcc-fukui-converter.git",
+  "author": "8amjp",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "csv-parse": "^4.8.8",
+    "fs-extra": "^9.0.0",
+    "node-fetch": "^2.6.0"
+  }
+}
