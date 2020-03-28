@@ -91,7 +91,7 @@ module.exports.scrape = async (page) => {
 
 樹里「スクレイピングには[cheerio](https://www.npmjs.com/package/cheerio)というライブラリを使用している」  
 絵子「知ってる。jQueryっぽく操作できるやつだよね」  
-樹里「
+樹里「そう。`href`属性
 絵子「
 樹里「
 絵子「
@@ -142,7 +142,7 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzA4NDk1MTksLTEyNzk5OTAxNjUsLT
+eyJoaXN0b3J5IjpbLTE0MDg2NjE3NTIsLTEyNzk5OTAxNjUsLT
 IzMDY1NjE2NSw0Njg2ODMzMDcsODExNDAxOTYsNjE1NzU5NzQ4
 LC0yMzc0MDE5MzldfQ==
 -->
