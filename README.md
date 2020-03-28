@@ -152,9 +152,8 @@ module.exports.fetch = async (url) => {
 
 ## Author
 
-[tcnksm](https://github.com/tcnksm)
-```
+[8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTQ5MzMyODQsODExNDAxOTYsNjE1Nz
-U5NzQ4LC0yMzc0MDE5MzldfQ==
+eyJoaXN0b3J5IjpbLTE5NTY1NzYsODExNDAxOTYsNjE1NzU5Nz
+Q4LC0yMzc0MDE5MzldfQ==
 -->
