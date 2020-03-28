@@ -67,10 +67,23 @@ const generator = require('./lib/generator')
 樹里「
 絵子「
 
-```
+```js:lib/fetcher.js
+/*
+  指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換します。
+*/
+const fetch = require('node-fetch')
+
+module.exports.fetch = async (url) => {
+    const response = await fetch(url)
+    const buffer = response.arrayBuffer()
+    const decoder = new TextDecoder("Shift_JIS")
+    const text = decoder.decode(buffer)
+    return text
+};
 ```
 
 ```
+
 ```
 
 ```
@@ -78,6 +91,6 @@ const generator = require('./lib/generator')
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI5ODgyNjI0LDYxNTc1OTc0OCwtMjM3ND
+eyJoaXN0b3J5IjpbMjE2MTMwNjgwLDYxNTc1OTc0OCwtMjM3ND
 AxOTM5XX0=
 -->
