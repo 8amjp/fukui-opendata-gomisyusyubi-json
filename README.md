@@ -97,7 +97,7 @@ module.exports.scrape = async (page) => {
 
 ### lib/generator.js
 
-樹里「
+樹里「次に、データの変換を行う`generator`モジュールだ」
 
 ```js:lib/generator.js
 /*
@@ -147,7 +147,7 @@ module.exports.fetch = async (url) => {
 
 樹里「……さて、無事にCSVをJSONに変換できた」  
 絵子「めでたしめでたし、だね」  
-樹里「いや、」  
+樹里「いやいや、データの形式を変換しただけで、何も出来上がってないぞ。大事なのは、」  
 絵子「」  
 
 
@@ -155,6 +155,6 @@ module.exports.fetch = async (url) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE3MDE2MzgzLDgxMTQwMTk2LDYxNTc1OT
+eyJoaXN0b3J5IjpbNDY4NjgzMzA3LDgxMTQwMTk2LDYxNTc1OT
 c0OCwtMjM3NDAxOTM5XX0=
 -->
