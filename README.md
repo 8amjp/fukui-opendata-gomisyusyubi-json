@@ -151,7 +151,7 @@ module.exports.generate = async (resource) => {
 ```
 
 絵子「これ、キーが日本語になってるけど、これは問題ないの？」  
-樹里「
+樹里「ああ、仕様に則った正しいJSONだぞ」  
 絵子「へー、そうなんだ」  
 樹里「なにより、Shift-JISのCSVよりははるかに扱いやすい」  
 絵子「よっぽどキライなんだね」
@@ -160,7 +160,7 @@ module.exports.generate = async (resource) => {
 
 樹里「……さて、無事にCSVをJSONに変換できた」  
 絵子「めでたしめでたし、だね」  
-樹里「いやいや、データの形式を変換しただけで、何も出来上がってないぞ。大事なのは、」  
+樹里「いやいや、データの形式を変換しただけで、何も出来上がってないぞ。大事なのは、このデータを使って」  
 絵子「」  
 
 
@@ -168,7 +168,7 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2OTA5MTk1MiwtMTI3OTk5MDE2NSwtMj
+eyJoaXN0b3J5IjpbLTM3NDY0ODk3OCwtMTI3OTk5MDE2NSwtMj
 MwNjU2MTY1LDQ2ODY4MzMwNyw4MTE0MDE5Niw2MTU3NTk3NDgs
 LTIzNzQwMTkzOV19
 -->
