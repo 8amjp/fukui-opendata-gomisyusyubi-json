@@ -124,8 +124,10 @@ module.exports.generate = async (resource) => {
 };
 ```
 
-樹里「単に、[node-fetch](https://www.npmjs.com/package/node-fetch)でCSVを取得してShift-JISに変換しているだけだ」  
+樹里「まず、[node-fetch](https://www.npmjs.com/package/node-fetch)でCSVを取得して、Shift-JISに変換する」    
 絵子「へー、[TextDecoder](https://developer.mozilla.org/ja/docs/Web/API/TextDecoder)っていうので文字コードを変換できるんだね」  
+樹里「
+絵子「
 
 ----
 
@@ -139,7 +141,7 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNTU5MjYzNSwtMTI3OTk5MDE2NSwtMj
-MwNjU2MTY1LDQ2ODY4MzMwNyw4MTE0MDE5Niw2MTU3NTk3NDgs
-LTIzNzQwMTkzOV19
+eyJoaXN0b3J5IjpbNTQzMDY4MzEwLC0xMjc5OTkwMTY1LC0yMz
+A2NTYxNjUsNDY4NjgzMzA3LDgxMTQwMTk2LDYxNTc1OTc0OCwt
+MjM3NDAxOTM5XX0=
 -->
