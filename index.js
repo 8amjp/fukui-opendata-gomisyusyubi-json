@@ -3,8 +3,8 @@
   収集日のCSVデータ（Shift-JIS）をJSONに変換します。
 */
 
-const scraper = require('./lib/scraper');
-const generator = require('./lib/generator');
+const scraper = require('./lib/scraper')
+const generator = require('./lib/generator')
 
 (async () => {
     // 「ごみ収集日一覧」ページのURL
