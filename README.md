@@ -59,7 +59,7 @@ const page = 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_go
 ```
 
 絵子「`scraper`と`generator`っていうのが、樹里が作ったモジュール？」  
-樹里「そう。`scraper`で「ごみ収集日一覧」ページからCSVへのリンクを取得している。で、`generator`でCSVをJSONに変換している」  
+樹里「そう。`scraper`で「ごみ収集日一覧」ページからCSVへのリンクを取得している。で、`generator`でCSVを取得してJSONに変換している」  
 絵子「なるほど」  
 樹里「では、各モジュールの動きをみてみよう」
 
@@ -169,7 +169,7 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk4MDY4NTksLTEyNzk5OTAxNjUsLTIzMD
-Y1NjE2NSw0Njg2ODMzMDcsODExNDAxOTYsNjE1NzU5NzQ4LC0y
-Mzc0MDE5MzldfQ==
+eyJoaXN0b3J5IjpbMTQyMTI2MDI1MSwtMTI3OTk5MDE2NSwtMj
+MwNjU2MTY1LDQ2ODY4MzMwNyw4MTE0MDE5Niw2MTU3NTk3NDgs
+LTIzNzQwMTkzOV19
 -->
