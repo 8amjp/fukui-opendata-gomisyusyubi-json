@@ -60,12 +60,12 @@ const page = 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_go
 
 絵子「`scraper`と`generator`っていうのが、樹里が作ったモジュール？」  
 樹里「そう。`scraper`で「ごみ収集日一覧」ページからCSVへのリンクを取得している。で、`generator`でCSVをJSONに変換している」  
-絵子「なるほど」
+絵子「なるほど」  
 樹里「では、各モジュールの動きをみてみよう」
 
 ### lib/scraper.js
 
-樹里「
+樹里「次に、ページをスクレイピングして、CSVへのリンクを取得する`scraper`モジュールだ」
 
 ```js:lib/scraper.js
 /*
@@ -141,6 +141,6 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NTAxMDA0MSw0Njg2ODMzMDcsODExND
+eyJoaXN0b3J5IjpbLTIzMDY1NjE2NSw0Njg2ODMzMDcsODExND
 AxOTYsNjE1NzU5NzQ4LC0yMzc0MDE5MzldfQ==
 -->
