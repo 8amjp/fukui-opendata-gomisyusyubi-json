@@ -141,11 +141,11 @@ module.exports.fetch = async (url) => {
 ```
 
 樹里「単に、[node-fetch](https://www.npmjs.com/package/node-fetch)でCSVを取得してShift-JISに変換しているだけだ」  
-絵子「へー、[TextDecoder](https://developer.mozilla.org/ja/docs/Web/API/TextDecoder)っていうのでもじこーどｗ
+絵子「へー、[TextDecoder](https://developer.mozilla.org/ja/docs/Web/API/TextDecoder)っていうので文字コードを変換できるんだね」  
 樹里「
 絵子「
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzEwMzA0OCw4MTE0MDE5Niw2MTU3NT
-k3NDgsLTIzNzQwMTkzOV19
+eyJoaXN0b3J5IjpbNDIxMzc4OTU3LDgxMTQwMTk2LDYxNTc1OT
+c0OCwtMjM3NDAxOTM5XX0=
 -->
