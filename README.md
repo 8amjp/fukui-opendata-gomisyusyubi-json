@@ -67,42 +67,9 @@ const generator = require('./lib/generator')
 樹里「
 絵子「
 
-```js:lib/fetcher.js
-/*
-  指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換します。
-*/
-const fetch = require('node-fetch')
 
-module.exports.fetch = async (url) => {
-    const response = await fetch(url)
-    const buffer = response.arrayBuffer()
-    const decoder = new TextDecoder("Shift_JIS")
-    const text = decoder.decode(buffer)
-    return text
-};
-```
 
-```js:lib/generator.js
-/*
-  指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換して出力します。
-*/
-const path = require('path')
-const fs = require('fs-extra')
-const parse = require('csv-parse/lib/sync')
-const fetcher = require('./fetcher')
-
-module.exports.generate = async (resource) => {
-    // ファイル名を生成
-    const file = path.basename(resource, '.csv') + '.json'
-    // 指定されたURLのCSVを取得
-    const csv = await fetcher.fetch(resource)
-    // CSVをJSONに変換
-    const json = await parse(csv, { columns: true, trim: true })
-    // JSONを出力
-    const result = await fs.outputJson(path.join('dist', file), json, { spaces: 4 })
-    return result
-};
-```
+### lib/scraper.js
 
 ```js:lib/scraper.js
 /*
@@ -126,8 +93,48 @@ module.exports.scrape = async (page) => {
 }
 ```
 
+### lib/generator.js
+
+```js:lib/generator.js
+/*
+  指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換して出力します。
+*/
+const path = require('path')
+const fs = require('fs-extra')
+const parse = require('csv-parse/lib/sync')
+const fetcher = require('./fetcher')
+
+module.exports.generate = async (resource) => {
+    // ファイル名を生成
+    const file = path.basename(resource, '.csv') + '.json'
+    // 指定されたURLのCSVを取得
+    const csv = await fetcher.fetch(resource)
+    // CSVをJSONに変換
+    const json = await parse(csv, { columns: true, trim: true })
+    // JSONを出力
+    const result = await fs.outputJson(path.join('dist', file), json, { spaces: 4 })
+    return result
+};
+```
+
+### lib/fetcher.js
+
+```js:lib/fetcher.js
+/*
+  指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換します。
+*/
+const fetch = require('node-fetch')
+
+module.exports.fetch = async (url) => {
+    const response = await fetch(url)
+    const buffer = response.arrayBuffer()
+    const decoder = new TextDecoder("Shift_JIS")
+    const text = decoder.decode(buffer)
+    return text
+};
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2OTk5NTQ1Miw2MTU3NTk3NDgsLTIzNz
+eyJoaXN0b3J5IjpbLTYwOTc3NTk5MCw2MTU3NTk3NDgsLTIzNz
 QwMTkzOV19
 -->
