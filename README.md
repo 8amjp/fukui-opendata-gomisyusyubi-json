@@ -1,6 +1,6 @@
 # 福井県オープンデータ ごみ収集日一覧CSVをJSONに変換するツール
 
-[福井県オープンデータ](https://www.pref.fukui.lg.jp/gyosei/jouhoukoukai/opendata/index.html)の「[ごみ収集日一覧](https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html)」で公開されている収集日のCSV（Shift-JIS）をJSONに変換します。
+「[福井県オープンデータライブラリ](https://www.pref.fukui.lg.jp/gyosei/jouhoukoukai/opendata/index.html)」で公開されている、県内17市町の「[ごみ収集日一覧](https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html)」データの形式を、CSV（Shift-JIS）からJSONに変換します。
 
 ## Description
 
