@@ -10,8 +10,8 @@
 絵子「ふむふむ」
 樹里「で、ごみ収集日一覧の収集日のデータを見てみたわけなんだが、公開されてるデータがなんとShift-JISのCSVなんだよ。この令和のご時世に」
 絵子「うーん。確かにそのままだと扱いにくいよね」
-樹里「Shift-JISのCSVなんだよ。この令和のご時世に」
-絵子「2回言わなくていいよ」
+樹里「**Shift-JISのCSVなんだよ。この令和のご時世に**」
+絵子「2回言わなくていいよ。あと太字にしなくてもいいよ」
 樹里「これではどうしようもないので、まずはちゃんとしたUTF-8のJSONに変換するアプリから作ってみた」
 絵子「なるほど。経緯はよくわかった」
 
@@ -38,11 +38,20 @@ node index.js
 ### index.js
 
 ```js:index.js
-const scraper = require('./lib/scraper');
-const generator = require('./lib/generator');
+/*
+  「福井県オープンデータライブラリ」の「ごみ収集日一覧」ページで公開されている
+  収集日のCSVデータ（Shift-JIS）をJSONに変換します。
+*/
+
+const scraper = require('./lib/scraper')
+const generator = require('./lib/generator')
+
 (async () => {
+    // 「ごみ収集日一覧」ページのURL
     const page = 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html'
+    // ページ内の17市町のCSVデータのURLを取得
     const resources = await scraper.scrape(page)
+    // すべてのCSVを取得してJSONに変換して出力
     await Promise.all(resources.map(resource => generator.generate(resource)));
     console.log('exit.')
 })();
@@ -58,6 +67,94 @@ const generator = require('./lib/generator');
 樹里「
 絵子「
 
+
+
+### lib/scraper.js
+
+樹里「
+
+```js:lib/scraper.js
+/*
+  指定されたページ内の、CSVへのリンクをを取得します。
+*/
+const fetch = require('node-fetch');
+const cheerio = require('cheerio');
+const url = require('url');
+
+module.exports.scrape = async (page) => {
+    // 指定されたページのHTMLを取得する
+    const response = await fetch(page)
+    const body = await response.text()
+    // cheerioでページをスクレイピング
+    const $ = await cheerio.load(body)
+    // 末尾が'.csv'のリンクをすべて取得
+    const relativePaths = await $('a[href$=".csv"]').map((i, el) => $(el).attr('href')).get()
+    // 絶対パスに変換
+    const absolutePaths = await relativePaths.map(path => url.resolve(page, path))
+    return absolutePaths
+}
+```
+
+### lib/generator.js
+
+樹里「次に、データの変換を行う`generator`モジュールだ」
+
+```js:lib/generator.js
+/*
+  指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換して出力します。
+*/
+const path = require('path')
+const fs = require('fs-extra')
+const parse = require('csv-parse/lib/sync')
+const fetcher = require('./fetcher')
+
+module.exports.generate = async (resource) => {
+    // ファイル名を生成
+    const file = path.basename(resource, '.csv') + '.json'
+    // 指定されたURLのCSVを取得
+    const csv = await fetcher.fetch(resource)
+    // CSVをJSONに変換
+    const json = await parse(csv, { columns: true, trim: true })
+    // JSONを出力
+    const result = await fs.outputJson(path.join('dist', file), json, { spaces: 4 })
+    return result
+};
+```
+
+### lib/fetcher.js
+
+樹里「最後に、CSVを取得する`fetcher`モジュールだ」
+
+```js:lib/fetcher.js
+/*
+  指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換します。
+*/
+const fetch = require('node-fetch')
+
+module.exports.fetch = async (url) => {
+    const response = await fetch(url)
+    const buffer = response.arrayBuffer()
+    const decoder = new TextDecoder("Shift_JIS")
+    const text = decoder.decode(buffer)
+    return text
+};
+```
+
+樹里「単に、[node-fetch](https://www.npmjs.com/package/node-fetch)でCSVを取得してShift-JISに変換しているだけだ」  
+絵子「へー、[TextDecoder](https://developer.mozilla.org/ja/docs/Web/API/TextDecoder)っていうので文字コードを変換できるんだね」  
+
+----
+
+樹里「……さて、無事にCSVをJSONに変換できた」  
+絵子「めでたしめでたし、だね」  
+樹里「いやいや、データの形式を変換しただけで、何も出来上がってないぞ。大事なのは、」  
+絵子「」  
+
+
+## Author
+
+[8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE1NzU5NzQ4LC0yMzc0MDE5MzldfQ==
+eyJoaXN0b3J5IjpbNDY4NjgzMzA3LDgxMTQwMTk2LDYxNTc1OT
+c0OCwtMjM3NDAxOTM5XX0=
 -->
