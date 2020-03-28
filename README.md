@@ -71,6 +71,8 @@ const generator = require('./lib/generator')
 
 ### lib/scraper.js
 
+樹里「
+
 ```js:lib/scraper.js
 /*
   指定されたページ内の、CSVへのリンクをを取得します。
@@ -94,6 +96,8 @@ module.exports.scrape = async (page) => {
 ```
 
 ### lib/generator.js
+
+樹里「
 
 ```js:lib/generator.js
 /*
@@ -119,6 +123,8 @@ module.exports.generate = async (resource) => {
 
 ### lib/fetcher.js
 
+樹里「最後に、CSVを取得する`fetcher`モジュールだ」
+
 ```js:lib/fetcher.js
 /*
   指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換します。
@@ -134,7 +140,12 @@ module.exports.fetch = async (url) => {
 };
 ```
 
+絵子「
+樹里「
+絵子「
+樹里「
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODExNDAxOTYsNjE1NzU5NzQ4LC0yMzc0MD
-E5MzldfQ==
+eyJoaXN0b3J5IjpbMTk1OTk3NzgyNCw4MTE0MDE5Niw2MTU3NT
+k3NDgsLTIzNzQwMTkzOV19
 -->
