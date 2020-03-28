@@ -17,14 +17,21 @@
 
 ## Usage
 
+樹里「使い方は簡単。[Node.js](https://nodejs.org/ja/)製のアプリなので……」
+
 ```
 git clone https://github.com/8amjp/fukui-opendata-gomisyusyubi-json.git
 cd fukui-opendata-gomisyusyubi-json
 npm install
+```
+
+樹里「このコマンドでインストールして、」
+
+```
 node index.js
 ```
 
-樹里「使い方は簡単。[Node.js](https://nodejs.org/ja/)製のアプリなので、」
+樹里「
 絵子「
 樹里「
 絵子「
@@ -38,5 +45,5 @@ node index.js
 絵子「
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTUzNjEzMjFdfQ==
+eyJoaXN0b3J5IjpbLTIyMDU4MTY2MV19
 -->
