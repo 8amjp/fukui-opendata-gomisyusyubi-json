@@ -14,8 +14,10 @@
 絵子「
 樹里「Shift-JISのCSVなんだよ。この令和のご時世に」
 絵子「2回言わなくていいよ」
-樹里「これではどうしようもないので、まずはちゃんとしたUTF-8のJSONに
-絵子「
+樹里「これではどうしようもないので、まずはちゃんとしたUTF-8のJSONに変換するアプリから作ってみた」
+絵子「なるほど。経緯はよくわかった」
+
+
 樹里「
 絵子「
 樹里「
@@ -25,5 +27,5 @@
 node index.js
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIxMjc0Nzg2XX0=
+eyJoaXN0b3J5IjpbLTI3NzAyNTM0XX0=
 -->
