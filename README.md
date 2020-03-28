@@ -25,13 +25,13 @@ cd fukui-opendata-gomisyusyubi-json
 npm install
 ```
 
-樹里「このコマンドでインストールして、」
+樹里「上記のコマンドでインストールして、」
 
 ```
 node index.js
 ```
 
-樹里「
+樹里「上記のコマンドを実行すれば、`dist`ディレクトリに福井県内全17市町の
 絵子「
 樹里「
 絵子「
@@ -45,5 +45,5 @@ node index.js
 絵子「
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMDU4MTY2MV19
+eyJoaXN0b3J5IjpbLTExNDAwMDUxNTNdfQ==
 -->
