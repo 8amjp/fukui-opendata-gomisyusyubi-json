@@ -4,9 +4,9 @@
 
 ## Usage
 
-樹里「というわけで、「[ごみ収集日一覧](https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html)」のJSONデータに変換します。
+樹里「というわけで、福井県内自治体の[ごみ収集日一覧](https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html)JSONデータを作成するアプリを作ってみた」
 絵子「ほう。なんでまた突然」
-樹里「それがな、久しぶりに[福井県オープンデータ](https://www.pref.fukui.lg.jp/gyosei/jouhoukoukai/opendata/index.html)に公開されてるデータを使ってWebアプリでも作ってみようとしたんだがな」
+樹里「それがな、久しぶりに[福井県オープンデータ](https://www.pref.fukui.lg.jp/gyosei/jouhoukoukai/opendata/index.html)に公開されてるデータを使って、Webアプリでも作ってみようとしたんだがな」
 絵子「
 樹里「で、ごみ収集日一覧の収集日のデータにしようと思ったんだがな」
 絵子「
@@ -27,5 +27,5 @@
 node index.js
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMDI5OTE1OF19
+eyJoaXN0b3J5IjpbLTEyMTMxNjAzNV19
 -->
