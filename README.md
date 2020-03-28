@@ -24,7 +24,7 @@ npm install
 node index.js
 ```
 
-樹里「使い方は簡単。」
+樹里「使い方は簡単。[Node.js](https://nodejs.org/ja/)製のアプリなので、」
 絵子「
 樹里「
 絵子「
@@ -38,5 +38,5 @@ node index.js
 絵子「
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwOTU2NjE5MF19
+eyJoaXN0b3J5IjpbLTE3OTUzNjEzMjFdfQ==
 -->
