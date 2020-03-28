@@ -124,7 +124,7 @@ module.exports.generate = async (resource) => {
 };
 ```
 
-樹里「まず、[node-fetch](https://www.npmjs.com/package/node-fetch)でCSVを取得して、Shift-JISに変換する」    
+樹里「まず、[node-fetch](https://www.npmjs.com/package/node-fetch)でCSVを取得して、Shift-JISからUTF-8に変換する」    
 絵子「へー、[TextDecoder](https://developer.mozilla.org/ja/docs/Web/API/TextDecoder)っていうので文字コードを変換できるんだね」  
 樹里「で、[csv](https://www.npmjs.com/package/csv)というライブラリの[`csv-parse`](https://csv.js.org/parse/)という機能を使って、CSVをJSONに変換しているわけだ」  
 絵子「便利なライブラリだねー」
