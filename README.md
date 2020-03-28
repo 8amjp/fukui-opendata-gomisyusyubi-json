@@ -17,7 +17,14 @@
 
 ## Usage
 
-樹里「使い方は簡単
+```
+git clone https://github.com/8amjp/fukui-opendata-gomisyusyubi-json.git
+cd fukui-opendata-gomisyusyubi-json
+npm install
+node index.js
+```
+
+樹里「使い方は簡単。」
 絵子「
 樹里「
 絵子「
@@ -30,9 +37,6 @@
 樹里「
 絵子「
 
-```
-node index.js
-```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNTY1MDU3OF19
+eyJoaXN0b3J5IjpbMjAwOTU2NjE5MF19
 -->
