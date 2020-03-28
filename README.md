@@ -58,8 +58,8 @@ const page = 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_go
 })();
 ```
 
-絵子「
-樹里「
+絵子「`scraper`と`generator`っていうのが、樹里が作ったモジュール？」
+樹里「そう。`scraper`で`generator`
 絵子「
 樹里「
 絵子「
@@ -141,6 +141,6 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5ODE4NjIxOCw0Njg2ODMzMDcsODExND
+eyJoaXN0b3J5IjpbLTUzNzU4NDMwMSw0Njg2ODMzMDcsODExND
 AxOTYsNjE1NzU5NzQ4LC0yMzc0MDE5MzldfQ==
 -->
