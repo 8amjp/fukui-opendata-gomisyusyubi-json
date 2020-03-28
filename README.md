@@ -143,13 +143,18 @@ module.exports.fetch = async (url) => {
 樹里「単に、[node-fetch](https://www.npmjs.com/package/node-fetch)でCSVを取得してShift-JISに変換しているだけだ」  
 絵子「へー、[TextDecoder](https://developer.mozilla.org/ja/docs/Web/API/TextDecoder)っていうので文字コードを変換できるんだね」  
 
-樹里「……という感じで、
-絵子「
+----
+
+樹里「……さて、無事にCSVをJSONに変換できた」  
+絵子「めでたしめでたし、だね」  
+樹里「いや、」  
+絵子「めでたしめでたし、だね」  
+
 
 ## Author
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDU3NTk4MzgsODExNDAxOTYsNjE1Nz
+eyJoaXN0b3J5IjpbLTExMTQ0OTEzNTksODExNDAxOTYsNjE1Nz
 U5NzQ4LC0yMzc0MDE5MzldfQ==
 -->
