@@ -40,7 +40,6 @@ node index.js
 ```js:index.js
 const scraper = require('./lib/scraper');
 const generator = require('./lib/generator');
-
 (async () => {
     const page = 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html'
     const resources = await scraper.scrape(page)
@@ -60,5 +59,5 @@ const generator = require('./lib/generator');
 絵子「
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwMzA3ODAzXX0=
+eyJoaXN0b3J5IjpbLTIzNzQwMTkzOV19
 -->
