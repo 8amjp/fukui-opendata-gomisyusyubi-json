@@ -10,8 +10,8 @@
 絵子「ふむふむ」
 樹里「で、ごみ収集日一覧の収集日のデータを見てみたわけなんだが、公開されてるデータがなんとShift-JISのCSVなんだよ。この令和のご時世に」
 絵子「うーん。確かにそのままだと扱いにくいよね」
-樹里「Shift-JISのCSVなんだよ。この令和のご時世に」
-絵子「2回言わなくていいよ」
+樹里「**Shift-JISのCSVなんだよ。この令和のご時世に**」
+絵子「2回言わなくていいよ。あと太字にしなくてもいいよ」
 樹里「これではどうしようもないので、まずはちゃんとしたUTF-8のJSONに変換するアプリから作ってみた」
 絵子「なるほど。経緯はよくわかった」
 
@@ -135,6 +135,6 @@ module.exports.fetch = async (url) => {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwOTc3NTk5MCw2MTU3NTk3NDgsLTIzNz
-QwMTkzOV19
+eyJoaXN0b3J5IjpbODExNDAxOTYsNjE1NzU5NzQ4LC0yMzc0MD
+E5MzldfQ==
 -->
