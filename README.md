@@ -160,15 +160,14 @@ module.exports.generate = async (resource) => {
 
 樹里「……さて、無事にCSVをJSONに変換できた」  
 絵子「めでたしめでたし、だね」  
-樹里「いやいや、データの形式を変換しただけで、何も出来上がってないぞ。大事なのは、このデータを使って」  
-絵子「」  
-
+樹里「いやいや、データの形式を変換しただけで、何も出来上がってないぞ。大事なのは、このデータを使ってどんなアプリを作るかだ」  
+絵子「そりゃそうだ」
 
 ## Author
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NDY0ODk3OCwtMTI3OTk5MDE2NSwtMj
-MwNjU2MTY1LDQ2ODY4MzMwNyw4MTE0MDE5Niw2MTU3NTk3NDgs
-LTIzNzQwMTkzOV19
+eyJoaXN0b3J5IjpbOTcwNjcxOTIsLTEyNzk5OTAxNjUsLTIzMD
+Y1NjE2NSw0Njg2ODMzMDcsODExNDAxOTYsNjE1NzU5NzQ4LC0y
+Mzc0MDE5MzldfQ==
 -->
