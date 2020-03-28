@@ -43,17 +43,16 @@ node index.js
   収集日のCSVデータ（Shift-JIS）をJSONに変換します。
 */
 
-const scraper = require('./lib/scraper')
-const generator = require('./lib/generator')
+const scraper = require('./lib/scraper');
+const generator = require('./lib/generator');
+const page = 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html'; // 「ごみ収集日一覧」ページのURL
 
 (async () => {
-    // 「ごみ収集日一覧」ページのURL
-    const page = 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html'
     // ページ内の17市町のCSVデータのURLを取得
     const resources = await scraper.scrape(page)
     // すべてのCSVを取得してJSONに変換して出力
-    await Promise.all(resources.map(resource => generator.generate(resource)));
-    console.log('exit.')
+    await Promise.all(resources.map(resource => generator.generate(resource)))
+    console.log('できたよ！')
 })();
 ```
 
@@ -155,6 +154,6 @@ module.exports.fetch = async (url) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4NjgzMzA3LDgxMTQwMTk2LDYxNTc1OT
-c0OCwtMjM3NDAxOTM5XX0=
+eyJoaXN0b3J5IjpbMjczOTI2MTY3LDQ2ODY4MzMwNyw4MTE0MD
+E5Niw2MTU3NTk3NDgsLTIzNzQwMTkzOV19
 -->
