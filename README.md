@@ -91,13 +91,8 @@ module.exports.scrape = async (page) => {
 
 樹里「スクレイピングには[cheerio](https://www.npmjs.com/package/cheerio)というライブラリを使用している」  
 絵子「知ってる。jQueryっぽく操作できるやつだよね」  
-樹里「そう。そのcheerioで、属性セレクターを使って、```css
-href が "org" で終わる <a> 要素
-```
-絵子「
-樹里「
-絵子「
-
+樹里「そう。そのcheerioで、属性セレクターを使って、`href`属性 が ".csv" で終わる`a`要素、すなわちCSVへのリンクを取得している」  
+絵子「なるほど」
 
 ### lib/generator.js
 
@@ -144,7 +139,7 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNTEwMDg5NCwtMTI3OTk5MDE2NSwtMj
+eyJoaXN0b3J5IjpbMTMwOTcyNTgwMCwtMTI3OTk5MDE2NSwtMj
 MwNjU2MTY1LDQ2ODY4MzMwNyw4MTE0MDE5Niw2MTU3NTk3NDgs
 LTIzNzQwMTkzOV19
 -->
