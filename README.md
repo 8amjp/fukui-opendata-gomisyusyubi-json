@@ -17,6 +17,14 @@
 
 ## Usage
 
+樹里「使い方は簡単。
+絵子「
+樹里「
+絵子「
+樹里「
+絵子「
+樹里「
+絵子「
 樹里「
 絵子「
 樹里「
@@ -26,5 +34,5 @@
 node index.js
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MzcyOTY5Nl19
+eyJoaXN0b3J5IjpbLTE2NzIwNjM1ODRdfQ==
 -->
