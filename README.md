@@ -146,14 +146,10 @@ module.exports.fetch = async (url) => {
 樹里「……という感じで、
 絵子「
 
-## Licence
-
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
-
 ## Author
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTY1NzYsODExNDAxOTYsNjE1NzU5Nz
-Q4LC0yMzc0MDE5MzldfQ==
+eyJoaXN0b3J5IjpbLTExNDU3NTk4MzgsODExNDAxOTYsNjE1Nz
+U5NzQ4LC0yMzc0MDE5MzldfQ==
 -->
