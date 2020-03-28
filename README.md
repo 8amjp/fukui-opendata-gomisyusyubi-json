@@ -10,12 +10,11 @@
 絵子「
 樹里「で、ごみ収集日一覧のデータにしようと思ったんだがな」
 絵子「
-樹里「ところが、公開されてるデータがなんとShift-JISのCSVだった
+樹里「ところが、公開されてるデータがなんとShift-JISのCSVなんだよ。この令和のご時世に」
 絵子「
-樹里「
-樹里「
-絵子「
-樹里「
+樹里「Shift-JISのCSVなんだよ。この令和のご時世に」
+絵子「2回言わなくていいよ」
+樹里「これではどうしようもないので、まずはちゃんとしたUTF-8のJSONに
 絵子「
 樹里「
 絵子「
@@ -26,5 +25,5 @@
 node index.js
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5OTI4MTA3MV19
+eyJoaXN0b3J5IjpbODIxMjc0Nzg2XX0=
 -->
