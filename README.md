@@ -148,13 +148,13 @@ module.exports.fetch = async (url) => {
 樹里「……さて、無事にCSVをJSONに変換できた」  
 絵子「めでたしめでたし、だね」  
 樹里「いや、」  
-絵子「めでたしめでたし、だね」  
+絵子「」  
 
 
 ## Author
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTQ0OTEzNTksODExNDAxOTYsNjE1Nz
-U5NzQ4LC0yMzc0MDE5MzldfQ==
+eyJoaXN0b3J5IjpbMjE3MDE2MzgzLDgxMTQwMTk2LDYxNTc1OT
+c0OCwtMjM3NDAxOTM5XX0=
 -->
