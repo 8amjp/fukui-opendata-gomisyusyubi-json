@@ -31,9 +31,22 @@ npm install
 node index.js
 ```
 
-樹里「上記のコマンドを実行すれば、`dist`ディレクトリに福井県内全17市町の
-絵子「
-樹里「
+樹里「上記のコマンドを実行すれば、`dist`ディレクトリにJSONデータが出力される」
+絵子「あら本当に簡単」
+樹里「じゃあ、アプリがどういう動きをするのか解説しよう」
+
+```js;
+const scraper = require('./lib/scraper');
+const generator = require('./lib/generator');
+
+(async () => {
+    const page = 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html'
+    const resources = await scraper.scrape(page)
+    await Promise.all(resources.map(resource => generator.generate(resource)));
+    console.log('exit.')
+})();
+```
+
 絵子「
 樹里「
 絵子「
@@ -45,5 +58,5 @@ node index.js
 絵子「
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDAwMDUxNTNdfQ==
+eyJoaXN0b3J5IjpbMTE4NDY0MTIyMV19
 -->
