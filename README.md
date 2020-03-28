@@ -127,7 +127,8 @@ module.exports.generate = async (resource) => {
 樹里「まず、[node-fetch](https://www.npmjs.com/package/node-fetch)でCSVを取得して、Shift-JISに変換する」    
 絵子「へー、[TextDecoder](https://developer.mozilla.org/ja/docs/Web/API/TextDecoder)っていうので文字コードを変換できるんだね」  
 樹里「で、[csv](https://www.npmjs.com/package/csv)というライブラリの[`csv-parse`](https://csv.js.org/parse/)という機能を使って、CSVをJSONに変換しているわけだ」  
-
+絵子「」
+樹里「さて、処理の結果、このようなJSONが出力される」
 
 ```json
 [
@@ -150,7 +151,7 @@ module.exports.generate = async (resource) => {
     ...
 ```
 
-絵子「これ、キーが日本語になってるけど、これは問題ないの？」  
+絵子「これ、キーが日本語になってるけど、問題ないの？」  
 樹里「ああ、仕様に則った正しいJSONだぞ」  
 絵子「へー、そうなんだ」  
 樹里「なにより、Shift-JISのCSVよりははるかに扱いやすい」  
@@ -167,7 +168,7 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcwNjcxOTIsLTEyNzk5OTAxNjUsLTIzMD
-Y1NjE2NSw0Njg2ODMzMDcsODExNDAxOTYsNjE1NzU5NzQ4LC0y
-Mzc0MDE5MzldfQ==
+eyJoaXN0b3J5IjpbMjA2MDc0NzMzMywtMTI3OTk5MDE2NSwtMj
+MwNjU2MTY1LDQ2ODY4MzMwNyw4MTE0MDE5Niw2MTU3NTk3NDgs
+LTIzNzQwMTkzOV19
 -->
