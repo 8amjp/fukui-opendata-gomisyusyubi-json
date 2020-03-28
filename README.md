@@ -37,6 +37,8 @@ node index.js
 
 ### index.js
 
+樹里「まずは、メインとなるコードだ」
+
 ```js:index.js
 /*
   「福井県オープンデータライブラリ」の「ごみ収集日一覧」ページで公開されている
@@ -139,6 +141,6 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMzkzNTAxNSw0Njg2ODMzMDcsODExND
+eyJoaXN0b3J5IjpbLTY5ODE4NjIxOCw0Njg2ODMzMDcsODExND
 AxOTYsNjE1NzU5NzQ4LC0yMzc0MDE5MzldfQ==
 -->
