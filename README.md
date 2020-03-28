@@ -4,15 +4,15 @@
 
 ## Description
 
-樹里「というわけで、福井県内自治体の[ごみ収集日一覧](https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html)JSONデータを作成するアプリを作ってみた」
-絵子「ほう。なんでまた突然」
-樹里「それがな、久しぶりに[福井県オープンデータ](https://www.pref.fukui.lg.jp/gyosei/jouhoukoukai/opendata/index.html)に公開されてるデータを使って、Webアプリでも作ってみようとしたんだがな」
-絵子「ふむふむ」
-樹里「で、ごみ収集日一覧の収集日のデータを見てみたわけなんだが、公開されてるデータがなんとShift-JISのCSVなんだよ。この令和のご時世に」
-絵子「うーん。確かにそのままだと扱いにくいよね」
-樹里「**Shift-JISのCSVなんだよ。この令和のご時世に**」
-絵子「2回言わなくていいよ。あと太字にしなくてもいいよ」
-樹里「これではどうしようもないので、まずはちゃんとしたUTF-8のJSONに変換するアプリから作ってみた」
+樹里「というわけで、福井県内自治体の[ごみ収集日一覧](https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html)JSONデータを作成するアプリを作ってみた」  
+絵子「ほう。なんでまた突然」  
+樹里「それがな、久しぶりに[福井県オープンデータ](https://www.pref.fukui.lg.jp/gyosei/jouhoukoukai/opendata/index.html)に公開されてるデータを使って、Webアプリでも作ってみようとしたんだがな」  
+絵子「ふむふむ」  
+樹里「で、ごみ収集日一覧の収集日のデータを見てみたわけなんだが、公開されてるデータがなんとShift-JISのCSVなんだよ。この令和のご時世に」  
+絵子「うーん。確かにそのままだと扱いにくいよね」  
+樹里「**Shift-JISのCSVなんだよ。この令和のご時世に**」  
+絵子「2回言わなくていいよ。あと太字にしなくてもいいよ」  
+樹里「これではどうしようもないので、まずはちゃんとしたUTF-8のJSONに変換するアプリから作ってみた」  
 絵子「なるほど。経緯はよくわかった」
 
 ## Usage
@@ -31,8 +31,8 @@ npm install
 node index.js
 ```
 
-樹里「と実行すれば、`dist`ディレクトリにJSONデータが出力される」
-絵子「あら本当に簡単」
+樹里「と実行すれば、`dist`ディレクトリにJSONデータが出力される」  
+絵子「あら本当に簡単」  
 樹里「じゃあ、アプリがどういう動きをするのか解説しよう」
 
 ### index.js
@@ -58,17 +58,10 @@ const page = 'https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_go
 })();
 ```
 
-絵子「`scraper`と`generator`っていうのが、樹里が作ったモジュール？」
-樹里「そう。`scraper`で「ごみ収集日一覧」ページからCSVへのリンクを取得している。で、`generator`でCSVをJSONに変換している」
+絵子「`scraper`と`generator`っていうのが、樹里が作ったモジュール？」  
+樹里「そう。`scraper`で「ごみ収集日一覧」ページからCSVへのリンクを取得している。で、`generator`でCSVをJSONに変換している」  
 絵子「なるほど」
-樹里「では、
-絵子「
-樹里「
-絵子「
-樹里「
-絵子「
-
-
+樹里「では、各モジュールの動きをみてみよう」
 
 ### lib/scraper.js
 
@@ -95,6 +88,13 @@ module.exports.scrape = async (page) => {
     return absolutePaths
 }
 ```
+
+絵子「
+樹里「
+絵子「
+樹里「
+絵子「
+
 
 ### lib/generator.js
 
@@ -141,6 +141,6 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3Njc2MDI5MCw0Njg2ODMzMDcsODExND
+eyJoaXN0b3J5IjpbMTc2NTAxMDA0MSw0Njg2ODMzMDcsODExND
 AxOTYsNjE1NzU5NzQ4LC0yMzc0MDE5MzldfQ==
 -->
