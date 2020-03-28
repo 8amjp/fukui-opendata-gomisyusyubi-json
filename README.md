@@ -89,7 +89,8 @@ module.exports.scrape = async (page) => {
 }
 ```
 
-絵子「[cheerio](https://www.npmjs.com/package/cheerio)
+樹里「スクレイピング[cheerio](https://www.npmjs.com/package/cheerio)
+絵子「
 樹里「
 絵子「
 樹里「
@@ -141,7 +142,7 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk5OTAxNjUsLTIzMDY1NjE2NSw0Nj
-g2ODMzMDcsODExNDAxOTYsNjE1NzU5NzQ4LC0yMzc0MDE5Mzld
-fQ==
+eyJoaXN0b3J5IjpbLTIxMzIyOTE2MDksLTEyNzk5OTAxNjUsLT
+IzMDY1NjE2NSw0Njg2ODMzMDcsODExNDAxOTYsNjE1NzU5NzQ4
+LC0yMzc0MDE5MzldfQ==
 -->
