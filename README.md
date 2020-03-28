@@ -35,7 +35,9 @@ node index.js
 絵子「あら本当に簡単」
 樹里「じゃあ、アプリがどういう動きをするのか解説しよう」
 
-```js;
+### index.js
+
+```js:index.js
 const scraper = require('./lib/scraper');
 const generator = require('./lib/generator');
 
@@ -58,5 +60,5 @@ const generator = require('./lib/generator');
 絵子「
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NDY0MTIyMV19
+eyJoaXN0b3J5IjpbMjgwMzA3ODAzXX0=
 -->
