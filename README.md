@@ -2,7 +2,7 @@
 
 [福井県オープンデータ](https://www.pref.fukui.lg.jp/gyosei/jouhoukoukai/opendata/index.html)の「[ごみ収集日一覧](https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html)」で公開されている収集日のCSV（Shift-JIS）をJSONに変換します。
 
-## Usage
+## Description
 
 樹里「というわけで、福井県内自治体の[ごみ収集日一覧](https://www.pref.fukui.lg.jp/doc/toukei-jouhou/opendata/list_ct_gomisyusyubi.html)JSONデータを作成するアプリを作ってみた」
 絵子「ほう。なんでまた突然」
@@ -15,6 +15,7 @@
 樹里「これではどうしようもないので、まずはちゃんとしたUTF-8のJSONに変換するアプリから作ってみた」
 絵子「なるほど。経緯はよくわかった」
 
+## Usage
 
 樹里「
 絵子「
@@ -25,5 +26,5 @@
 node index.js
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTc0NzE2NzJdfQ==
+eyJoaXN0b3J5IjpbMTA2MzcyOTY5Nl19
 -->
