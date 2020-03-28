@@ -130,10 +130,29 @@ module.exports.generate = async (resource) => {
 
 
 ```json
-
+[
+    {
+        "行": "あ",
+        "音": "あ",
+        "町名": "在田町",
+        "読み": "あいだ",
+        "燃える": "火･金",
+        "燃えない": "2･4木",
+        "プラスチック製容器包装": "月",
+        "カン": "1･3水",
+        "ビン": "4水",
+        "ペットボトル": "2水",
+        "ダンボール": "3水",
+        "蛍光灯": "4木",
+        "キーワード": "清水",
+        "備考": "清水南"
+    },
+    ...
 ```
 
-絵子「……ところで、出来上がったJSONのキーが日本語に
+絵子「これ、キーが日本語になってるけど、これは問題ないの？」  
+樹里「
+絵子「
 
 ----
 
@@ -147,7 +166,7 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MDQxMDgwOSwtMTI3OTk5MDE2NSwtMj
-MwNjU2MTY1LDQ2ODY4MzMwNyw4MTE0MDE5Niw2MTU3NTk3NDgs
-LTIzNzQwMTkzOV19
+eyJoaXN0b3J5IjpbLTM0MjY0MDU3LC0xMjc5OTkwMTY1LC0yMz
+A2NTYxNjUsNDY4NjgzMzA3LDgxMTQwMTk2LDYxNTc1OTc0OCwt
+MjM3NDAxOTM5XX0=
 -->
