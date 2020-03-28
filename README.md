@@ -82,15 +82,52 @@ module.exports.fetch = async (url) => {
 };
 ```
 
+```js:lib/generator.js
+/*
+  指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換して出力します。
+*/
+const path = require('path')
+const fs = require('fs-extra')
+const parse = require('csv-parse/lib/sync')
+const fetcher = require('./fetcher')
+
+module.exports.generate = async (resource) => {
+    // ファイル名を生成
+    const file = path.basename(resource, '.csv') + '.json'
+    // 指定されたURLのCSVを取得
+    const csv = await fetcher.fetch(resource)
+    // CSVをJSONに変換
+    const json = await parse(csv, { columns: true, trim: true })
+    // JSONを出力
+    const result = await fs.outputJson(path.join('dist', file), json, { spaces: 4 })
+    return result
+};
 ```
 
-```
+```js:lib/scraper.js
+/*
+  指定されたページ内の、CSVへのリンクをを取得します。
+*/
+const fetch = require('node-fetch');
+const cheerio = require('cheerio');
+const url = require('url');
 
-```
+module.exports.scrape = async (page) => {
+    // 指定されたページのHTMLを取得する
+    const response = await fetch(page)
+    const body = await response.text()
+    // cheerioでページをスクレイピング
+    const $ = await cheerio.load(body)
+    // 末尾が'.csv'のリンクをすべて取得
+    const relativePaths = await $('a[href$=".csv"]').map((i, el) => $(el).attr('href')).get()
+    // 絶対パスに変換
+    const absolutePaths = await relativePaths.map(path => url.resolve(page, path))
+    return absolutePaths
+}
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE2MTMwNjgwLDYxNTc1OTc0OCwtMjM3ND
-AxOTM5XX0=
+eyJoaXN0b3J5IjpbMTI2OTk5NTQ1Miw2MTU3NTk3NDgsLTIzNz
+QwMTkzOV19
 -->
