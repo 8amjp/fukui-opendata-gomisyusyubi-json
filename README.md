@@ -149,7 +149,7 @@ module.exports.generate = async (resource) => {
         "キーワード": "清水",
         "備考": "清水南"
     },
-    ...
+    // 以下略
 ```
 
 絵子「これ、キーが日本語になってるけど問題ないの？」  
@@ -169,7 +169,7 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMTI2MDI1MSwtMTI3OTk5MDE2NSwtMj
-MwNjU2MTY1LDQ2ODY4MzMwNyw4MTE0MDE5Niw2MTU3NTk3NDgs
-LTIzNzQwMTkzOV19
+eyJoaXN0b3J5IjpbLTIwNTIxNjYzNDAsMTQyMTI2MDI1MSwtMT
+I3OTk5MDE2NSwtMjMwNjU2MTY1LDQ2ODY4MzMwNyw4MTE0MDE5
+Niw2MTU3NTk3NDgsLTIzNzQwMTkzOV19
 -->
