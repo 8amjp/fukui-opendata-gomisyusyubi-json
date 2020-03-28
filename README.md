@@ -8,9 +8,9 @@
 絵子「ほう。なんでまた突然」  
 樹里「それがな、久しぶりに[福井県オープンデータ](https://www.pref.fukui.lg.jp/gyosei/jouhoukoukai/opendata/index.html)に公開されてるデータを使って、Webアプリでも作ってみようとしたんだがな」  
 絵子「ふむふむ」  
-樹里「で、ごみ収集日一覧の収集日のデータを見てみたわけなんだが、公開されてるデータがなんとShift-JISのCSVなんだよ。この令和のご時世に」  
+樹里「で、ごみ収集日一覧の収集日のデータを見てみたわけなんだが、公開されてるデータがなんとShift-JISのCSVなんだよ。この令和の時代に」  
 絵子「うーん。確かにそのままだと扱いにくいよね」  
-樹里「**Shift-JISのCSVなんだよ。この令和のご時世に**」  
+樹里「**Shift-JISのCSVなんだよ。この令和の時代に**」  
 絵子「2回言わなくていいよ。あと太字にしなくてもいいよ」  
 樹里「これではどうしようもないので、まずはちゃんとしたUTF-8のJSONに変換するアプリから作ってみた」  
 絵子「なるほど。経緯はよくわかった」
@@ -169,7 +169,7 @@ module.exports.generate = async (resource) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjAzMTQ1NjMsMTQyMTI2MDI1MSwtMT
-I3OTk5MDE2NSwtMjMwNjU2MTY1LDQ2ODY4MzMwNyw4MTE0MDE5
-Niw2MTU3NTk3NDgsLTIzNzQwMTkzOV19
+eyJoaXN0b3J5IjpbLTc0ODMzMzYzNywtMTQyMDMxNDU2MywxND
+IxMjYwMjUxLC0xMjc5OTkwMTY1LC0yMzA2NTYxNjUsNDY4Njgz
+MzA3LDgxMTQwMTk2LDYxNTc1OTc0OCwtMjM3NDAxOTM5XX0=
 -->
