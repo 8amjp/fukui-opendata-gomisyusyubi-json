@@ -96,46 +96,31 @@ module.exports.scrape = async (page) => {
 
 ### lib/generator.js
 
-樹里「次に、データの変換を行う`generator`モジュールだ」
+樹里「最後に、データの変換を行う`generator`モジュールだ」
 
 ```js:lib/generator.js
 /*
   指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換して出力します。
 */
-const path = require('path')
-const fs = require('fs-extra')
-const parse = require('csv-parse/lib/sync')
-const fetcher = require('./fetcher')
+const path = require('path');
+const fs = require('fs-extra');
+const fetch = require('node-fetch');
+const parse = require('csv-parse/lib/sync');
 
 module.exports.generate = async (resource) => {
     // ファイル名を生成
     const file = path.basename(resource, '.csv') + '.json'
     // 指定されたURLのCSVを取得
-    const csv = await fetcher.fetch(resource)
+    const response = await fetch(resource)
+    const buffer = await response.arrayBuffer()
+    // CSVの文字コードをShift-JISからUTF-8にに変換
+    const decoder = new TextDecoder("Shift_JIS")
+    const csv = decoder.decode(buffer)
     // CSVをJSONに変換
     const json = await parse(csv, { columns: true, trim: true })
     // JSONを出力
     const result = await fs.outputJson(path.join('dist', file), json, { spaces: 4 })
     return result
-};
-```
-
-### lib/fetcher.js
-
-樹里「最後に、CSVを取得する`fetcher`モジュールだ」
-
-```js:lib/fetcher.js
-/*
-  指定されたURLのCSVを取得し、文字コードをShift-JISからUTF-8にに変換します。
-*/
-const fetch = require('node-fetch')
-
-module.exports.fetch = async (url) => {
-    const response = await fetch(url)
-    const buffer = response.arrayBuffer()
-    const decoder = new TextDecoder("Shift_JIS")
-    const text = decoder.decode(buffer)
-    return text
 };
 ```
 
@@ -154,6 +139,6 @@ module.exports.fetch = async (url) => {
 
 [8amjp](https://github.com/8amjp)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjczOTI2MTY3LDQ2ODY4MzMwNyw4MTE0MD
-E5Niw2MTU3NTk3NDgsLTIzNzQwMTkzOV19
+eyJoaXN0b3J5IjpbMTYzMzkzNTAxNSw0Njg2ODMzMDcsODExND
+AxOTYsNjE1NzU5NzQ4LC0yMzc0MDE5MzldfQ==
 -->
